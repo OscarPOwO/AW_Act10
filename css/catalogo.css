@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: rgba(3, 212, 6, 0.822);
+}
+
+footer a:hover {
+    color: rgba(5, 255, 1, 0.968);
+}
+
+#contacto .bi {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--vn-header-texto);
+}
+
+.caja {
+    background-color: #262e26;
+    border: 2px solid rgb(0, 255, 8);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.caja h2 {
+    font-size: 1.5rem;
+}
+
+.caja .carousel-control-prev,
+.caja .carousel-control-next {
+    width: 50px;
+}
+
+@media (min-width: 768px) {
+    .detalle-contenido {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .caja .carousel-inner {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
