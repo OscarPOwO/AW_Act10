@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Zavala">
+    <meta name="description" content="Anime Streaming">
+    <title>VaNime - Alya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/comun.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top vanime-nav" data-bs-theme="light">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand" href="inicio.html">VaNime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="busqueda.html">Popular</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoría</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="busqueda.html?genero=accion">Acción</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=romance">Romance</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=suspenso">Suspenso</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="busqueda.html">Ver todas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="serie.html#calificar">Calificar</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ajustes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="perfil.html">Mi cuenta</a></li>
+            <li><a class="dropdown-item" href="#">Idioma</a></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex align-items-center gap-3" role="search" action="busqueda.html" method="get">
+        <input class="form-control rounded-3" type="search" name="q" placeholder="Ingresa títulos o géneros" aria-label="Buscar">
+        <button type="submit" class="nav-icon" aria-label="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<main class="container-fluid mt-3 px-4">
+<div class="row">
+<aside class="col-md-4 col-lg-3">
+  <div class="caja">
+    <div class="card text-center bg-black text-white border border-2 border-success rounded-4">
+      <img src="images/Portada16.jpg" class="card-img-top rounded-circle mx-auto mt-3 border border-3 border-success" style="width: 150px; height: 150px; object-fit: cover;" alt="Girlfriend Girlfriend">
+      <div class="card-body">
+        <h1 class="card-title fs-6">Alya Sometimes Hides Her Feelings in Russian</h1>
+        <p class="card-text text-success">Alya es una estudiante inteligente y orgullosa que suele ocultar sus sentimientos detrás de una actitud fría. Sin embargo, cuando está cerca de Masachika Kuze, deja escapar en ruso las palabras románticas que no se atreve a decir en japonés, sin imaginar que él puede entenderlas. Entre bromas, celos y momentos inesperadamente tiernos, ambos comienzan a descubrir que el amor puede esconderse detrás de las palabras más sinceras.</p>
+      </div>
+    </div>
+  </div>
+</aside>
+<br>
+<section class="col-md-8 col-lg-9 detalle-contenido">
+  <div class="card bg-dark text-white border border-2 border-success rounded-4">
+
+    <div class="card-header border-success">
+      <strong>Calificación</strong>
+      <span class="text-warning ms-2">★★★★★</span>
+    </div>
+
+    <div class="card-body">
+      <p><strong>Audio:</strong> <span class="text-success">Japonés, Español (América Latina), English, Português (Brasil)</span></p>
+      <p><strong>Aviso sobre el contenido:</strong> <span class="text-success">Contenido sexual, imágenes sexualizadas, diálogos sugerentes, lenguaje ofensivo</span></p>
+      <p><strong>Géneros:</strong> <span class="text-success">Comedia, Romance</span></p>
+
+      <figure class="mb-0">
+        <blockquote class="blockquote">
+          <p class="fs-6 text-success">Basado en el manga "Girlfriend, Girlfriend".</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Hiroyuki, publicado por <cite title="Kodansha">Kodansha</cite>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+</div>
+</main>
+<br>
+<footer id="contacto" class="bg-black text-white py-4">
+  <div class="container text-center text-white">
+    <p>2026 &copy Zavala Ortiz Ricardo Alberto</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

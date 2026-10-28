@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaNime - Kanojo x Kanojo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/series.css">
+    <link rel="stylesheet" href="css/comun.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top vanime-nav" data-bs-theme="light">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand" href="inicio.html">VaNime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="busqueda.html">Popular</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoría</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="busqueda.html?genero=accion">Acción</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=romance">Romance</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=suspenso">Suspenso</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="busqueda.html">Ver todas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="serie.html#calificar">Calificar</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ajustes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="perfil.html">Mi cuenta</a></li>
+            <li><a class="dropdown-item" href="#">Idioma</a></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex align-items-center gap-3" role="search" action="busqueda.html" method="get">
+        <input class="form-control rounded-3" type="search" name="q" placeholder="Ingresa títulos o géneros" aria-label="Buscar">
+        <button type="submit" class="nav-icon" aria-label="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <main class="container-fluid px-4 py-4">
+    <div class="row g-4">
+
+      <aside class="col-12 col-lg-3">
+        <div class="panel ficha p-4 text-center">
+          <img src="images/girlfriendGirlfriend.jpg" class="img-fluid rounded-circle ficha-foto" alt="Kanojo x Kanojo">
+          <h1 class="ficha-titulo">Kanojo x Kanojo</h1>
+          <p>Naoya por fin ha conseguido que su novia de la infancia le dé el visto bueno a su amor y salen juntos, pero cuando aparece una preciosa desconocida que le declara su amor.</p>
+          <div class="separador"><i class="bi bi-diamond-fill"></i></div>
+          <a href="#" class="btn btn-comenzar w-100"><i class="bi bi-play me-2"></i>Comenzar</a>
+        </div>
+      </aside>
+
+      <section class="col-12 col-lg-9">
+
+        <div id="carruselSerie" class="carousel slide panel p-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/girlfriendGirlfriend1.jpg" class="d-block w-100 rounded-4" alt="Escena 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/girlfriendGirlfriend2.jpg" class="d-block w-100 rounded-4" alt="Escena 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/girlfriendGirlfriend3.jpg" class="d-block w-100 rounded-4" alt="Escena 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselSerie" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselSerie" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+          <div class="carousel-indicators indicadores-rombo">
+            <button type="button" data-bs-target="#carruselSerie" data-bs-slide-to="0" class="active" aria-label="Escena 1"></button>
+            <button type="button" data-bs-target="#carruselSerie" data-bs-slide-to="1" aria-label="Escena 2"></button>
+            <button type="button" data-bs-target="#carruselSerie" data-bs-slide-to="2" aria-label="Escena 3"></button>
+          </div>
+        </div>
+
+        <div class="panel p-3 mt-4 d-flex flex-column gap-3">
+          <div class="panel" id="calificar">
+            <h2 class="titulo">Rating</h2>
+            <h3 class="subtitulo">Por la crítica:</h3>
+            <p>IMDb: Cuenta con una puntuación general de 6.5 de 10, con episodios individuales que alcanzan hasta 8.1.</p>
+            <p>MyAnimeList: La primera temporada tiene un 6.51 de 10 y la segunda temporada asciende a 6.99 de 10.</p>
+            <h3 class="subtitulo">Por la comunidad:</h3>
+            <p>La comunidad coincide en que es una comedia romántica muy entretenida y ligera, perfecta para disfrutar de una historia dinámica. Los espectadores destacan cómo se burla de los clichés del género gracias a un protagonista que opta por una honestidad total y directa.</p>
+          </div>
+
+          <div class="panel">
+            <h2 class="titulo">Comentarios</h2>
+            <div class="comentario">
+              <h3 class="subtitulo">Usuario random:</h3>
+              <span class="nota">8/10</span>
+              <p>La serie me parece entretenida</p>
+            </div>
+            <div class="comentario">
+              <h3 class="subtitulo">Usuario excéntrico:</h3>
+              <span class="nota">7/10</span>
+              <p>Viendo este anime me di cuenta de que la lógica es una prisión mental. Naoya no es un protagonista, es una fuerza de la naturaleza que desafía las leyes de la monogamia con el poder de la honestidad termonuclear.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <section class="mt-5" id="relacionadas">
+      <h2 class="titulo mb-3">Series relacionadas</h2>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="col"><a href="serie.html"><img src="images/100Novias.jpg" class="img-fluid portada" alt="Serie 1"></a></div>
+        <div class="col"><a href="serie.html"><img src="images/classroomOfTheElite.jpg" class="img-fluid portada" alt="Serie 2"></a></div>
+        <div class="col"><a href="serie.html"><img src="images/danDaDan.jpg" class="img-fluid portada" alt="Serie 3"></a></div>
+        <div class="col"><a href="serie.html"><img src="images/frieren.jpg" class="img-fluid portada" alt="Serie 4"></a></div>
+        <div class="col"><a href="serie.html"><img src="images/mobPsycho.jpg" class="img-fluid portada" alt="Serie 5"></a></div>
+        <div class="col"><a href="serie.html"><img src="images/sakamotoDays.jpg" class="img-fluid portada" alt="Serie 6"></a></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<footer id="contacto" class="bg-black text-white py-4">
+  <div class="container text-center text-white">
+    <p>2026 &copy Diego Cervantes</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

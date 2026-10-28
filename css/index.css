@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background-color: #2f5a35;
+    font-family: "Comic Sans MS", cursive;
+    color: white;
+    min-height: 100vh;        
+    display: flex;            
+    flex-direction: column;  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    flex: 1;                  
+    padding: 20px;
+}

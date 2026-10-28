@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Zavala">
+    <meta name="description" content="Anime Streaming">
+    <meta name="keywords" content="Anime, Waifus, Series,">
+    <title>VaNime - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/comun.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top vanime-nav" data-bs-theme="light">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand" href="inicio.html">VaNime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="busqueda.html">Popular</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoría</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="busqueda.html?genero=accion">Acción</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=romance">Romance</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=suspenso">Suspenso</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="busqueda.html">Ver todas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="serie.html#calificar">Calificar</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ajustes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="perfil.html">Mi cuenta</a></li>
+            <li><a class="dropdown-item" href="#">Idioma</a></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex align-items-center gap-3" role="search" action="busqueda.html" method="get">
+        <input class="form-control rounded-3" type="search" name="q" placeholder="Ingresa títulos o géneros" aria-label="Buscar">
+        <button type="submit" class="nav-icon" aria-label="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="caja">
+  <h2  class="text-success">Guardados:</h2>
+
+  <div id="carGuardados" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carGuardados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carGuardados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner px-5 pb-4">
+
+      <div class="carousel-item active">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/classroom-of-the-elite.jpg" class="d-block w-100 rounded" alt="Anime 1"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada1.jpg" class="d-block w-100 rounded" alt="Anime 2"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada2.jpg" class="d-block w-100 rounded" alt="Anime 3"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/portada3.jpg" class="d-block w-100 rounded" alt="Anime 4"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/portada4.jpg" class="d-block w-100 rounded" alt="Anime 5"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/portada5.jpg" class="d-block w-100 rounded" alt="Anime 6"></a></div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/Portada6.jpg" class="d-block w-100 rounded" alt="Anime 7"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada7.jpg" class="d-block w-100 rounded" alt="Anime 8"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/portada8.jpg" class="d-block w-100 rounded" alt="Anime 9"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada9.jpg" class="d-block w-100 rounded" alt="Anime 10"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada10.jpg" class="d-block w-100 rounded" alt="Anime 11"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada11.jpg" class="d-block w-100 rounded" alt="Anime 12"></a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carGuardados" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carGuardados" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+<section class="caja">
+  <h2  class="text-success">Ver Luego:</h2>
+
+  <div id="carVerluego" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carVerluego" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carVerluego" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner px-5 pb-4">
+
+      <div class="carousel-item active">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/Portada13.jpg" class="d-block w-100 rounded" alt="Anime 1"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada14.jpg" class="d-block w-100 rounded" alt="Anime 2"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada15.jpg" class="d-block w-100 rounded" alt="Anime 3"></a></div>
+          <div class="col"><a href="detalle.html"><img src="images/Portada16.jpg" class="d-block w-100 rounded" alt="Anime 4"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada17.jpg" class="d-block w-100 rounded" alt="Anime 5"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada18.jpg" class="d-block w-100 rounded" alt="Anime 6"></a></div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/Portada19.jpg" class="d-block w-100 rounded" alt="Anime 7"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada20.jpg" class="d-block w-100 rounded" alt="Anime 8"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada21.jpg" class="d-block w-100 rounded" alt="Anime 9"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada22.jpg" class="d-block w-100 rounded" alt="Anime 10"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada23.jpg" class="d-block w-100 rounded" alt="Anime 11"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/portada24.jpg" class="d-block w-100 rounded" alt="Anime 12"></a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carVerluego" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carVerluego" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+<section class="caja">
+  <h2  class="text-success">Favoritos:</h2>
+
+  <div id="carFavoritos" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carFavoritos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carFavoritos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner px-5 pb-4">
+
+      <div class="carousel-item active">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/Portada25.jpg" class="d-block w-100 rounded" alt="Anime 1"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada26.jpg" class="d-block w-100 rounded" alt="Anime 2"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada27.jpg" class="d-block w-100 rounded" alt="Anime 3"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada28.jpg" class="d-block w-100 rounded" alt="Anime 4"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada29.jpg" class="d-block w-100 rounded" alt="Anime 5"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada30.jpg" class="d-block w-100 rounded" alt="Anime 6"></a></div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <div class="col"><a href="serie.html"><img src="images/Portada31.jpg" class="d-block w-100 rounded" alt="Anime 7"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada32.jpg" class="d-block w-100 rounded" alt="Anime 8"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada33.jpg" class="d-block w-100 rounded" alt="Anime 9"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada34.jpg" class="d-block w-100 rounded" alt="Anime 10"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada35.jpg" class="d-block w-100 rounded" alt="Anime 11"></a></div>
+          <div class="col"><a href="serie.html"><img src="images/Portada10.jpg" class="d-block w-100 rounded" alt="Anime 12"></a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carFavoritos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carFavoritos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+<br>
+<footer id="contacto" class="bg-black text-white py-4">
+  <div class="container text-center text-white">
+    <p>2026 &copy Zavala Ortiz Ricardo Alberto</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

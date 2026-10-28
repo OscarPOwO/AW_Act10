@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #2f5a35;
+    font-family: 'Quicksand', sans-serif;
+    color: #22e022;
+}
+
+header {
+    background-color: #1fc23a;
+    height: 50px;
+    overflow: hidden;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    line-height: 50px;
+    font-family: 'Racing Sans One', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #123d1a;
+}
+
+nav {
+    float: right;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+nav a {
+    color: #123d1a;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.imagen {
+    float: left;
+    width: 40%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.opaca {
+    opacity: 0.25;
+}
+
+.formulario {
+    float: right;
+    width: 55%;
+    margin-top: 80px;
+}
+
+.formulario h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #22e022;
+}
+
+
+input {
+    width: 260px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid #22e022;
+    border-radius: 20px;
+    color: #22e022;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+
+input::placeholder {
+    color: #1a9c1a;
+}
+
+input:focus {
+    outline: none;
+    background-color: #264a2b;
+}
+
+.fecha {
+    width: 35px;
+    text-align: center;
+    padding: 6px 8px;
+    margin-left: 5px;
+}
+
+button {
+    padding: 8px 25px;
+    margin-left: 15px;
+    background-color: #1fc23a;
+    border: none;
+    border-radius: 20px;
+    color: #123d1a;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #22e022;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .imagen,
+    .formulario {
+        float: none;
+        width: 100%;
+    }
+
+    .imagen {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .formulario {
+        margin-top: 20px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .fecha {
+        width: 35px;
+        max-width: none;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+footer a {
+    color: rgba(3, 212, 6, 0.822);
+}
+
+footer a:hover {
+    color: rgba(5, 255, 1, 0.968);
+}
+
+#contacto .bi {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--texto-header);
+    position: sticky;
+    bottom: 0;
+}

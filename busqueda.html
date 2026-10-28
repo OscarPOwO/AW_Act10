@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaNime - Búsqueda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/series.css">
+    <link rel="stylesheet" href="css/comun.css">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg sticky-top vanime-nav" data-bs-theme="light">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand" href="inicio.html">VaNime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="busqueda.html">Popular</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoría</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="busqueda.html?genero=accion">Acción</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=romance">Romance</a></li>
+            <li><a class="dropdown-item" href="busqueda.html?genero=suspenso">Suspenso</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="busqueda.html">Ver todas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="serie.html#calificar">Calificar</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ajustes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="perfil.html">Mi cuenta</a></li>
+            <li><a class="dropdown-item" href="#">Idioma</a></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex align-items-center gap-3" role="search" action="busqueda.html" method="get">
+        <input class="form-control rounded-3" type="search" name="q" placeholder="Ingresa títulos o géneros" aria-label="Buscar">
+        <button type="submit" class="nav-icon" aria-label="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+ 
+  <main>
+    <div class="container-fluid px-4 py-3 generos">
+      <span>Contenidos para explorar:</span>
+      <a href="busqueda.html">Todas</a><i class="bi bi-diamond-fill"></i>
+      <a href="busqueda.html?genero=accion">Acción</a><i class="bi bi-diamond-fill"></i>
+      <a href="busqueda.html?genero=romance">Romance</a><i class="bi bi-diamond-fill"></i>
+      <a href="busqueda.html?genero=suspenso">Suspenso</a><i class="bi bi-diamond-fill"></i>
+      <a href="busqueda.html?genero=comedia">Comedia</a><i class="bi bi-diamond-fill"></i>
+      <a href="busqueda.html?genero=fantasia">Fantasía</a>
+    </div>
+ 
+    <section id="popular" class="container-fluid px-4 pb-5">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="col" data-titulo="Attack on Titan" data-generos="accion drama suspenso"><a href="serie.html"><img src="images/attackOnTitan.jpg" class="img-fluid portada" alt="Attack on Titan"></a></div>
+        <div class="col" data-titulo="Bleach" data-generos="accion fantasia"><a href="serie.html"><img src="images/bleach.jpg" class="img-fluid portada" alt="Bleach"></a></div>
+        <div class="col" data-titulo="Classroom of the Elite" data-generos="suspenso drama"><a href="serie.html"><img src="images/classroomOfTheElite.jpg" class="img-fluid portada" alt="Classroom of the Elite"></a></div>
+        <div class="col" data-titulo="Dan Da Dan" data-generos="accion comedia fantasia"><a href="serie.html"><img src="images/danDaDan.jpg" class="img-fluid portada" alt="Dan Da Dan"></a></div>
+        <div class="col" data-titulo="Demon Slayer" data-generos="accion fantasia"><a href="serie.html"><img src="images/demonSlayer.jpg" class="img-fluid portada" alt="Demon Slayer"></a></div>
+        <div class="col" data-titulo="Frieren" data-generos="fantasia aventura"><a href="serie.html"><img src="images/frieren.jpg" class="img-fluid portada" alt="Frieren"></a></div>
+        <div class="col" data-titulo="Mob Psycho 100" data-generos="accion comedia"><a href="serie.html"><img src="images/mobPsycho.jpg" class="img-fluid portada" alt="Mob Psycho 100"></a></div>
+        <div class="col" data-titulo="Sakamoto Days" data-generos="accion comedia"><a href="serie.html"><img src="images/sakamotoDays.jpg" class="img-fluid portada" alt="Sakamoto Days"></a></div>
+        <div class="col" data-titulo="Solo Leveling" data-generos="accion fantasia"><a href="serie.html"><img src="images/soloLeveling.jpg" class="img-fluid portada" alt="Solo Leveling"></a></div>
+        <div class="col" data-titulo="Witch Hat Atelier" data-generos="fantasia"><a href="serie.html"><img src="images/witchHatAtelier.jpg" class="img-fluid portada" alt="Witch Hat Atelier"></a></div>
+        <div class="col" data-titulo="Las 100 novias" data-generos="romance comedia"><a href="serie.html"><img src="images/100Novias.jpg" class="img-fluid portada" alt="Las 100 novias"></a></div>
+        <div class="col" data-titulo="Jujutsu Kaisen" data-generos="accion fantasia suspenso"><a href="serie.html"><img src="images/jujutsuKaisen.jpg" class="img-fluid portada" alt="Jujutsu Kaisen"></a></div>
+        <div class="col" data-titulo="My Hero Academia" data-generos="accion"><a href="serie.html"><img src="images/myheroAcademia.jpg" class="img-fluid portada" alt="My Hero Academia"></a></div>
+        <div class="col" data-titulo="Los siete pecados capitales" data-generos="accion fantasia aventura"><a href="serie.html"><img src="images/sietePecados.jpg" class="img-fluid portada" alt="Los siete pecados capitales"></a></div>
+        <div class="col" data-titulo="Attack on Titan" data-generos="accion drama suspenso"><a href="serie.html"><img src="images/attackOnTitan.jpg" class="img-fluid portada" alt="Attack on Titan"></a></div>
+        <div class="col" data-titulo="Bleach" data-generos="accion fantasia"><a href="serie.html"><img src="images/bleach.jpg" class="img-fluid portada" alt="Bleach"></a></div>
+        <div class="col" data-titulo="Classroom of the Elite" data-generos="suspenso drama"><a href="serie.html"><img src="images/classroomOfTheElite.jpg" class="img-fluid portada" alt="Classroom of the Elite"></a></div>
+        <div class="col" data-titulo="Dan Da Dan" data-generos="accion comedia fantasia"><a href="serie.html"><img src="images/danDaDan.jpg" class="img-fluid portada" alt="Dan Da Dan"></a></div>
+        <div class="col" data-titulo="Demon Slayer" data-generos="accion fantasia"><a href="serie.html"><img src="images/demonSlayer.jpg" class="img-fluid portada" alt="Demon Slayer"></a></div>
+        <div class="col" data-titulo="Frieren" data-generos="fantasia aventura"><a href="serie.html"><img src="images/frieren.jpg" class="img-fluid portada" alt="Frieren"></a></div>
+        <div class="col" data-titulo="Mob Psycho 100" data-generos="accion comedia"><a href="serie.html"><img src="images/mobPsycho.jpg" class="img-fluid portada" alt="Mob Psycho 100"></a></div>
+        <div class="col" data-titulo="Sakamoto Days" data-generos="accion comedia"><a href="serie.html"><img src="images/sakamotoDays.jpg" class="img-fluid portada" alt="Sakamoto Days"></a></div>
+        <div class="col" data-titulo="Solo Leveling" data-generos="accion fantasia"><a href="serie.html"><img src="images/soloLeveling.jpg" class="img-fluid portada" alt="Solo Leveling"></a></div>
+        <div class="col" data-titulo="Witch Hat Atelier" data-generos="fantasia"><a href="serie.html"><img src="images/witchHatAtelier.jpg" class="img-fluid portada" alt="Witch Hat Atelier"></a></div>
+      </div>
+    </section>
+    <p id="sinResultados" class="text-center generos d-none pb-5">No se encontraron series con esa búsqueda.</p>
+  </main>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/busqueda.js"></script>
+<br>
+<footer id="contacto" class="bg-black text-white py-4">
+  <div class="container text-center text-white">
+    <p>2026 &copy Zavala Ortiz Ricardo Alberto</p>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="#" class="fs-4">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

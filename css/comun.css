@@ -1,0 +1,107 @@
+:root {
+    --fondo: #2f5a35;
+    --header: #1fc23a;
+    --texto-header: #123d1a;
+    --verde: #22e022;
+}
+
+html,
+body {
+    background-color: var(--fondo);
+}
+
+body {
+    min-height: 100vh;
+}
+
+.vanime-nav {
+    background-color: var(--header);
+}
+
+.vanime-nav .navbar-brand {
+    font-family: 'Racing Sans One', sans-serif;
+    font-style: italic;
+    font-size: 32px;
+    color: var(--texto-header);
+}
+
+.vanime-nav .nav-link,
+.vanime-nav .nav-icon {
+    color: var(--texto-header);
+}
+
+.vanime-nav .nav-link:hover,
+.vanime-nav .nav-icon:hover {
+    color: white;
+}
+
+.vanime-nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.vanime-nav .dropdown-menu {
+    background-color: #264a2b;
+    border: 1px solid var(--verde);
+}
+
+.vanime-nav .dropdown-item {
+    color: var(--verde);
+}
+
+.vanime-nav .dropdown-item:hover {
+    background-color: var(--fondo);
+    color: white;
+}
+
+.vanime-nav .form-control {
+    background-color: #264a2b;
+    border: 2px solid var(--texto-header);
+    color: var(--verde);
+}
+
+.vanime-nav .form-control::placeholder {
+    color: #1a9c1a;
+}
+
+.vanime-nav .form-control:focus {
+    background-color: var(--fondo);
+    border-color: var(--verde);
+    box-shadow: none;
+}
+
+.nav-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    .vanime-nav form input {
+        min-width: 240px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: rgba(3, 212, 6, 0.822);
+}
+
+footer a:hover {
+    color: rgba(5, 255, 1, 0.968);
+}
+
+#contacto .bi {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--texto-header);
+    position: sticky;
+    bottom: 0;
+}
