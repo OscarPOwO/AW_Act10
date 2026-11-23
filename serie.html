@@ -162,10 +162,10 @@
   </div>
   </footer>
     
-   <script src="js/app.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', saltarLoginSiAutenticado);
-        document.getElementById('formLogin').addEventListener('submit', iniciarSesion);
-    </script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { verificarAcceso(); });
+  </script>
+  
 </body>
 </html>
