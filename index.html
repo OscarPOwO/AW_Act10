@@ -30,10 +30,10 @@
         <div class="formulario">
             <h2>El mejor sitio para conocer nuevos animes!</h2>
  
-            <form action="inicio.html" method="get">
-                <input type="text" name="usuario" placeholder="Correo/Usuario" required>
+            <form id="formLogin">
+                <input id="inputUser" type="text" name="usuario" placeholder="Correo/Usuario" required>
                 <br>
-                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <input id="inputPass" type="password" name="contrasena" placeholder="Contraseña" required>
                 <button type="submit">Vamos</button>
             </form>
         </div>
@@ -48,5 +48,11 @@
         <a href="#"><i class="bi bi-tiktok"></i></a>
     </div>
 </footer>
+        <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', saltarLoginSiAutenticado);
+        document.getElementById('formLogin').addEventListener('submit', iniciarSesion);
+    </script>
+
 </body>
 </html>
