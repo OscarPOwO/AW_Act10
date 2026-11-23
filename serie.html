@@ -45,7 +45,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="perfil.html">Mi cuenta</a></li>
             <li><a class="dropdown-item" href="#">Idioma</a></li>
-            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+            <li><a href="#" onclick="cerrarSesion()"class="dropdown-item" href="index.html" >Cerrar sesión</a>
           </ul>
         </li>
       </ul>
@@ -161,5 +161,11 @@
     </div>
   </div>
   </footer>
+    
+   <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', saltarLoginSiAutenticado);
+        document.getElementById('formLogin').addEventListener('submit', iniciarSesion);
+    </script>
 </body>
 </html>
